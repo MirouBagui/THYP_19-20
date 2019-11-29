@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Amir saoudi CV developpeur full stack java jee</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8"/>
+    <meta name="Language" content="fr" />
+    <meta http-equiv="Content-Type" content="text/html" /> 
+    <meta name="author" content="Amir Saoudi"/>
+    <meta name="publisher" content="Amir Dev" />
+    <meta name="description" content="Developpeur full-stack Amir Saoudi, CV en-ligne, Portfolio, recherche alternance,contrat pro,contrat apprentissage,Programmation,mobile,site,vitrine,e-comerce,Wordpress" />
+    <meta name="googlebot" content="index,follow,nosnippet" />
+    <meta name="google" content="nositelinkssearchbox" />
+    <meta name="google" content="notranslate" />
+    <meta name="reply-to" content="contact@amirdevelop.com" />
+    <meta name="keywords" content="développeur,full-stack,web,integration,Freelance,job-opportunity,Amir,Saoudi,Programmation,multimédia" />
+    <link rel="canonical" href="http://www.amirdevelop.com/#" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+ <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-database.js"></script>
+
+ <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+ <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-analytics.js"></script>
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+        <a class="navbar-brand" href="#"></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                <i class="fas fa-bars fa-lg"></i>
+        </button>
+        
+        <div class="collapse navbar-collapse justify-content-center" id="myNavbar">
+            <ul class="nav nav-pills navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#about">Moi</a></li>             
+                <li class="nav-item"><a class="nav-link" href="#informations">Informations</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Expériences</a></li>
+                <li class="nav-item"><a class="nav-link" href="#education">Formations</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<section id="about" class="container-fluid">
+        <div class="col-8 col-lg-4 profile-picture" >
+            <img id="photo" src="images/amir.jpg" alt="Amir" width="380px" class="rounded-circle">
+        </div>
+        <div class="row justify-content-center align-items-center h-100">
+                <div class="form-group">
+                  <form action="">
+                    <div class="form-group">
+                            <label for="etudiantList"></label>
+                      <select id="etudiantList" class="custom-select custom-select-sm">
+                            <option value="">Choose me :)</option>
+                      </select>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        <div class="heading">
+                <h1 id="etuNom">Amir SAOUDI</h1>
+                <h3 id="specialite">Développeur</h3>
+                <a href="docs/CV_Amir.pdf" class="button1">Télécharger CV</a>
+        </div>
+     </section>
+    
+     <section id="informations">
+            <div class="container">
+                <div class="red-divider"></div>
+                <div class="heading">
+                    <h2>Informations</h2>
+                </div>
+
+                    <ul id="info">
+                            <li><strong>Nom complet: </strong><span id="nomComplet">SAOUDI Amir</span> </li>
+                            <li><strong>N° étudiant : </strong> <span id="numEtudiant">19001145</span></li>
+                            <li><strong>Compte NetVibes: </strong> <span id="netvibes">https://www.netvibes.com/saoudi-05</span></li>
+                            <li><strong>Compte Diigo: </strong> <span id="diigo">amir_05</span></li>
+                            <li><strong>Compte GitHub: </strong> <span id="github">MirouBagui</span></li>
+                            <li><strong>Formation précedente: </strong> <span id="formationPreced">master informatique biomédicale</span></li>
+                        </ul>
+                </div>
+            </section>
+    <section id="skills">
+        <div class="container">
+          <div class="red-divider"></div>
+          <h2 id="skills" class="heading">Compétences</h2>
+          <h4 id="graphText" style="text-align: center;"> <br></h4>
+          <div id="moreskills">
+            </div>
+        </div>
+      </section>
+        <section id="experience">
+        
+            <div class="container">
+                <div class="red-divider"></div>
+                <div class="heading">
+                    <h2>Expériences Professionelles</h2>
+                </div>
+                <ul class="timeline" id="exp">
+                    <li class="timeline-inverted">
+                        <div class="timeline-badge"><span class="fas fa-briefcase"></span></div>
+                        <div class="timeline-panel-container">
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 id="titre">Développeur web junior chez P3SECURITE</h4>
+                                    <p class="text-muted"><small class="fas fa-clock"></small> 03/2019 – 06/2019</p>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>- Benchmark UX (ergonomique) du site de l'entreprise</p>
+                                    <p>- Création des maquettes graphiques du site sur : la page d'accueil, le formulaire de contact, etc..</p>
+                                    <p>- Intégration de des maquettes graphique HTML5 CSS3 JavaScript, Bootstrap 4.</p>
+                                    <p>- Accompagnement marketing : plan marketing, SEO, SEA, webanalyse, …</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-badge"><span class="fas fa-briefcase"></span></div>
+                        <div class="timeline-panel-container-inverted">
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Assistant médico-technique</h4>
+                                    <h3>Stage de fin d’études CHA Dr. Med Sghir NEKKACHE </h3>
+                                    <p class="text-muted"><small class="fas fa-clock"></small> 01/2015 – 04/2015</p>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>- Présentation du métier de l’ingénieure en informatique médical dans le milieu hospitalier.</p>
+                                    <p>- Assistance dans une étude sur la mise en place d’un système d’information hospitalière.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-badge"><span class="fas fa-briefcase"></span></div>
+                        <div class="timeline-panel-container">
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Technicien de maintenance en matériel médical</h4>
+                                    <h3>Stage pratique</h3>
+                                    <p class="text-muted"><small class="fas fa-clock"></small> 08/2014 – 10/2014</p>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>- La découverte du milieu de travail dans un service de maintenance au sein de CHU Batna.</p>
+                                    <p>- Découverte des matériaux médicaux.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+        </section>
+      
+      <section id="education">
+            <div class="container">
+                 <div class="red-divider"></div>
+                <div class="heading">
+                    <h2>Formations</h2>
+                </div>
+                <div class="row" id="edu">
+                    <div class="col-md-6">
+                         <div class="education-block">
+                            <h5 id="year">2019 - 2020</h5>
+                            <span class="fas fa-graduation-cap"></span>
+                            <h3 id="titre">Université Paris 8</h3>
+                            <h4 id="description">Master 2 Informatique: Technologie de l'Hypermedia</h4>
+                <!--     <div class="red-divider"></div>
+                            <p>Atelier Développement</p>
+                            <p>Développement Mobile</p>
+                            <p>Techniques informatiques & web</p>
+                        --></div>
+                    </div>
+                <!--      <div class="col-md-6">
+                         <div class="education-block">
+                            <h5>2019</h5>
+                            <span class="fas fa-graduation-cap"></span>
+                            <h3>Udemy.com</h3>
+                            <h4>Formation Développeur Web</h4>
+                            <div class="red-divider"></div>
+                            <p>HTML/CSS, Javascript, JQuery, Bootstrap</p>
+                            <p>Responsive Design</p>
+                        </div>
+                    </div>
+                -->
+                    <div class="col-md-6">
+                        <div class="education-block">
+                            <h5 id="year">2018 - 2019</h5>
+                            <span class="fas fa-graduation-cap"></span>
+                            <h3 id="titre">Université Paris 13 .</h3>
+                            <h4 id="description">Master 1 : Informatique Biomédicale</h4>
+                         <!--   <div class="red-divider"></div>
+                            <p>Programmation Orientée Objet</p>
+                            <p>Développement Web</p>
+                            <p>UML</p>
+                            -->
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                         <div class="education-block">
+                            <h5 id="year">2017 - 2018</h5>
+                            <span class="fas fa-graduation-cap"></span>
+                            <h3 id="titre">Université de Batna</h3>
+                            <h4 id="description">Master 1: Instrumentation Biomédicale</h4>
+                         <!--   <div class="red-divider"></div>
+                            <p>Traitement de signal</p>
+                            <p>Traitement d'image</p>
+                       -->
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                         <div class="education-block">
+                            <h5 id="year">2012 - 2015</h5>
+                            <span class="fas fa-graduation-cap"></span>
+                            <h3 id="titre">Université de Tlemcen</h3>
+                            <h4 id="description">Licence en Informatique Biomédicale</h4>
+                         <!--   <div class="red-divider"></div>
+                            <p>Système d'aide au diagnostic médical</p>
+                            <p>Reconnaissance des formes</p>
+                            <p>IHM</p>
+                        -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <div class="red-divider"></div>
+                <div class="heading">
+                    <h2>Contactez-moi</h2>
+                </div>
+               <div class="row">
+                   <div class="col-lg-12 col-lg-offset-1">
+                        <form id="contact-form" method="post" action="php/contact.php" role="form">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="firstname">Prénom  *</label>
+                                    <input id="firstname" type="text" name="firstname" class="form-control" placeholder="Votre prénom">
+                                    <p class="comments"></p>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="name">Nom  *</label>
+                                    <input id="name" type="text" name="name" class="form-control" placeholder="Votre Nom">
+                                    <p class="comments"></p>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email">Email  *</label>
+                                    <input id="email" type="text" name="email" class="form-control" placeholder="Votre Email">
+                                    <p class="comments"></p>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone">Téléphone *</label>
+                                    <input id="phone" type="tel" name="phone" class="form-control" placeholder="Votre Téléphone">
+                                    <p class="comments"></p>
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="message">Message  *</label>
+                                    <textarea id="message" name="message" class="form-control" placeholder="Votre Message" rows="4"></textarea>
+                                    <p class="comments"></p>
+                                </div>
+                                <div class="col-md-12">
+                                    <p ><strong>* Ces informations sont requises.</strong></p>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="submit" class="button1" value="Envoyer">
+                                </div>    
+                            </div>
+                        </form>
+                    </div>
+               </div>
+            </div>
+        </section>
+        <footer class="text-center">
+            <a href="#about">
+                <span class="fas fa-chevron-up"></span>
+            </a>
+            <h5>#WeDontNeedNoThoughtControl</h5>
+        </footer>
+      
+  </body>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>  
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://d3js.org/d3-queue.v3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/main.js"></script>
+</html> 
