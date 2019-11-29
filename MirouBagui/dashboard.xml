@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+ <head>
+  <title>Amir vibes</title>
+  <type>Public</type>
+  <creationDate>2019-11-04 10:50:58</creationDate>
+ </head>
+ <body>
+  <outline title="hobbies" cols="4" layout="4-6">
+   <outline title="InternetActu.net » Flux des commentaires" xmlUrl="http://www.internetactu.net/comments/feed/" htmlUrl="http://www.internetactu.net/" type="rss" row="125" col="1"/>
+   <outline title="InternetActu.net » Flux" xmlUrl="http://www.internetactu.net/feed/" htmlUrl="http://www.internetactu.net/" type="rss" row="1000" col="2"/>
+   <outline title="Flux général Developpez" xmlUrl="https://www.developpez.com/index/rss" htmlUrl="http://www.developpez.com/index/rss" type="rss" row="1000" col="4"/>
+  </outline>
+  <outline title="Actualités" icon="calc" iconColor="blue" cols="3" layout="3-0">
+   <outline title="Frenchweb.fr" provider="custom" url="http://avatars.netvibes.com/multifeed/396172" row="1000" col="1">
+    <outline/>
+   </outline>
+   <outline title="Silicon" xmlUrl="http://www.silicon.fr/feed" htmlUrl="https://www.silicon.fr/" type="rss" row="2000" col="1"/>
+   <outline title="ZDNet.fr" provider="custom" url="http://avatars.netvibes.com/multifeed/305007" row="3000" col="1">
+    <outline/>
+   </outline>
+   <outline title="Les Numériques" xmlUrl="http://feeds.feedburner.com/lesnumeriques/news" htmlUrl="https://www.lesnumeriques.com/" type="rss" row="4000" col="1"/>
+   <outline title="Blog de Netvibes" xmlUrl="http://feeds.feedburner.com/NetvibesDevBlogFR" htmlUrl="http://blog.netvibes.com/fr" type="rss" row="5000" col="1"/>
+   <outline title="CNETFrance Widget" provider="custom" url="http://avatars.netvibes.com/multifeed/377916" row="1000" col="2">
+    <outline/>
+   </outline>
+   <outline title="Usine Digitale L'Usine Digitale - Actualit&amp;eacute;s &amp;agrave; la une" xmlUrl="http://www.usine-digitale.fr/rss" htmlUrl="https://www.usine-digitale.fr/" type="rss" row="2000" col="2"/>
+   <outline title="Presence PC - Actualité" xmlUrl="http://www.tomshardware.fr/feeds/rss2/all.xml" htmlUrl="https://www.tomshardware.fr/" type="rss" row="3000" col="2"/>
+   <outline title="Generation Nouvelles Technologies" xmlUrl="http://www.generation-nt.com/export/rss.xml" htmlUrl="https://www.generation-nt.com/" type="rss" row="4000" col="2"/>
+   <outline title="PC INpact" xmlUrl="http://www.nextinpact.com/rss/news.xml" htmlUrl="https://www.nextinpact.com/" type="rss" row="5000" col="2"/>
+   <outline title="Tech – Numerama" xmlUrl="http://www.numerama.com/tech/feed/" htmlUrl="https://www.numerama.com/" type="rss" row="1000" col="3"/>
+   <outline title="Next INpact" xmlUrl="http://www.nextinpact.com/rss/news.xml" htmlUrl="https://www.nextinpact.com/" type="rss" row="2000" col="3"/>
+   <outline title="Infos-du-net - Actualites" xmlUrl="http://www.tomsguide.fr/feeds/rss2/news.xml" htmlUrl="https://www.tomsguide.fr/" type="rss" row="3000" col="3"/>
+   <outline title="01net. Actualités" xmlUrl="http://www.01net.com/rss/actualites/" htmlUrl="https://www.01net.com/info/flux-rss/flux-toutes-les-actualites/" type="rss" row="4000" col="3"/>
+   <outline title="Clubic.com - Actualité" xmlUrl="http://www.clubic.com/articles.rss" htmlUrl="https://www.clubic.com/articles.rss" type="rss" row="5000" col="3"/>
+  </outline>
+  <outline title="Blogs" icon="bubble" iconColor="blue" cols="3" layout="3-0">
+   <outline title="Meta-media | La révolution de l'information" xmlUrl="http://meta-media.fr/feed" htmlUrl="https://www.meta-media.fr/" type="rss" row="1000" col="1"/>
+   <outline title="Korben" xmlUrl="http://feeds.feedburner.com/KorbensBlog-UpgradeYourMind" htmlUrl="https://korben.info/" type="rss" row="1000" col="2"/>
+   <outline title="Presse-Citron" xmlUrl="http://www.presse-citron.net/feed/" htmlUrl="https://www.presse-citron.net/" type="rss" row="2000" col="2"/>
+  </outline>
+  <outline title="Temps réel" icon="clock" iconColor="blue" cols="3" layout="3-0">
+   <outline type="ExtendedVibes" title="Twitter search: 'from:frenchweb'" row="1000" col="1">
+    <outline streamTypes="twitter-search" lockedTab="true" mySearch="from:frenchweb" filterSearch="" searchLimit="5" geocode="" radius="" unit="kilometers" showThumb="1" pagerPosition="bottom" activeTab="twitter-search" nvid="" searchType="social" latLong="" color="blue" searchHistory="from:frenchweb:from:rss_01net:android_france:from:netvibes:pcimpact:pcinpact:from:pcinpact" lightVersion="1"/>
+   </outline>
+   <outline type="ExtendedVibes" title="Twitter search: 'from:Next_Labs'" row="1000" col="2">
+    <outline streamTypes="twitter-search" lockedTab="true" mySearch="from:Next_Labs" filterSearch="" searchLimit="5" geocode="" radius="" unit="kilometers" showThumb="1" pagerPosition="bottom" activeTab="twitter-search" nvid="" searchType="social" latLong="" color="blue" searchHistory="[&quot;from:Next_Labs&quot;,&quot;android_france&quot;,&quot;from&quot;,&quot;netvibes&quot;,&quot;pcimpact&quot;,&quot;pcinpact&quot;,&quot;from:pcinpact&quot;]" lightVersion="1"/>
+   </outline>
+   <outline type="ExtendedVibes" title="Twitter search: 'from:android_france'" row="1000" col="3">
+    <outline streamTypes="twitter-search" lockedTab="true" mySearch="from:android_france" filterSearch="" searchLimit="5" geocode="" radius="" unit="kilometers" showThumb="1" pagerPosition="bottom" activeTab="twitter-search" nvid="" searchType="social" latLong="" color="blue" searchHistory="from:android_france:netvibes" lightVersion="1"/>
+   </outline>
+  </outline>
+ </body>
+</opml>
