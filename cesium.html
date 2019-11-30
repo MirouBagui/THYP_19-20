@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Make the application on mobile take up the full browser screen and disable user scaling. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <title>My 3D Road Map</title>
+  <meta name="author" content="Amir Saoudi"/>
+  <script src="Cesium/Build/Cesium/Cesium.js"></script>
+  <script type="text/javascript" src="Cesium/Apps/Sandcastle/Sandcastle-header.js"></script>
+
+  <style>
+      @import url(../Build/Cesium/Widgets/widgets.css);
+      html, body, #cesiumContainer {
+          width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden;
+      }
+  </style>
+</head>
+<body>
+  <div id="cesiumContainer" class="fullSize"></div>
+  <div id="toolbar"></div>
+  <script id="cesium_sandcastle_script">
+    function startup(Cesium) {
+    'use strict';
+ Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIwZjk4ZWQyZi0zZGYyLTRjZDgtYTU5NC0yNzc1MGMyNTE3ZTUiLCJpZCI6MTg0OTksInNjb3BlcyI6WyJhc3IiLCJnYyJdLCJpYXQiOjE1NzM5MDU5ODN9.l13Rp6wv1NrbMOicXvuKUk3QkU9MxYpRPmYHSZhtojs';
+
+var viewer = new Cesium.Viewer('cesiumContainer');
+var imageryLayer = viewer.imageryLayers.addImageryProvider(
+    new Cesium.IonImageryProvider({ assetId: 3 })
+);
+
+viewer.zoomTo(imageryLayer)
+    .otherwise(function (error) {
+        console.log(error);
+    });
+var promise = Cesium.IonResource.fromAssetId(57986)
+    .then(function (resource) {
+        return Cesium.GeoJsonDataSource.load(resource);
+    })
+    .then(function (dataSource) {
+        return viewer.dataSources.add(dataSource);
+    })
+    .then(function (dataSource) {
+        return viewer.zoomTo(dataSource);
+    })
+    .otherwise(function (error) {
+        console.log(error);
+    });
+ 
+    var promise = Cesium.IonResource.fromAssetId(58229)
+    .then(function (resource) {
+        return Cesium.GeoJsonDataSource.load(resource);
+    })
+    .then(function (dataSource) {
+        return viewer.dataSources.add(dataSource);
+    });
+    } 
+if (typeof Cesium !== 'undefined') {
+    window.startupCalled = true;
+    startup(Cesium);
+}
+  </script>
+</body>
+</html>
