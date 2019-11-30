@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cartographie</title>
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" >
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>    
     <script src="js/Leaflet.CountrySelect.js"></script>
     <script src="js/leaflet.ajax.min.js"></script>
     <script src="js/countries.geo.json"></script>
     <script src="js/pays.json"></script>
+    <link rel="stylesheet" href="cv/template/css/style.css">
     <script src="https://d3js.org/d3.v5.min.js"></script>
 
 
@@ -28,19 +29,23 @@
             height: 20px; 
             border-color: 3px solid black; 
             margin: 2%;
-            background-color: #130789;
+            background-color: #0c0264;
         }
     </style>
 </head>
-<body>
+<body style="color: #c7a163; background-color: #7d203f; " data-spy="scroll" data-target=".navbar" data-offset="60">
+    <section>
     <br>
-    <h1>Etudiants :</h1>
-    <div id="preselect">
-        <select style="background-color: white" class="form-control" id="dropdownId">
+    <div class="heading">
+    <h2>Student :</h2>
+    </div>
+    <div class="container" id="preselect">
+
+        <select class="custom-select custom-select-sm" id="dropdownId">
         </select>
     </div>
     <br>
-    <div id="mapid"></div>
+    <div class="container" id="mapid"></div>
     <script>
         var map = L.map('mapid').setView([0, 0], 1);   
         
@@ -80,19 +85,7 @@
           }
         }
         liste.onchange();
-        //charge les limites des pays
-        //var geojsonLayer = new L.GeoJSON.AJAX("js/countries.geo.json").addTo(map);
-        //défini l'échelle de couleur
-        // var colorScale = d3.scaleSequential()
-        //     .domain([0, 100])
-        //     .interpolator(d3['interpolatePlasma']);      
-        /*
-            var c = colorScale(20);
-            c = colorScale(0);
-            c = colorScale(100);
-        */      
-        //définie le style du pays
-        //merci à https://leafletjs.com/examples/choropleth/
+  
         function onChangeStudent(){
             var paysVisitesEtudiant = {"type":"FeatureCollection", "features":[]};
             console.log("paysVisitesEtudiant2", paysVisitesEtudiant);
@@ -105,10 +98,8 @@
             .interpolator(d3['interpolatePlasma']);     
             var nbAlea = d3.randomUniform(0, 100);
             function style(feature) {
-                // console.log("feature", feature);
-                return {
-                    //fillColor: colorScale(feature.properties.density),
-                    fillColor: colorScale(1),
+                 return {
+                     fillColor: colorScale(1),
                     weight: 2,
                     opacity: 1,
                     color: 'none',
@@ -116,17 +107,13 @@
                     fillOpacity: (currentStudentData.data.pays[feature.properties.name]/5)
                 };
             }
-            //charge les limites des pays avec leur style
-            // console.log('state', statesData.features[0].properties.name);
+ 
             console.log('etud', paysVisites.etudiants[0].data.pays);
-            // console.log(Object.keys(paysVisites.etudiants[0].data.pays));
-            statesData.features.forEach(allCountries => {
+             statesData.features.forEach(allCountries => {
                 Object.keys(currentStudentData.data.pays).forEach(studentCountries => {
                     if(allCountries.properties.name == studentCountries){
-                        // console.log("allCountries", allCountries);
-                        paysVisitesEtudiant.features.push(allCountries);
-                        // console.log(paysVisites.etudiants[0].data.pays[allCountries.properties.name])
-                    }
+                         paysVisitesEtudiant.features.push(allCountries);
+                     }
                 })
             });
             console.log("paysVisitesEtudiant", paysVisitesEtudiant);
@@ -135,7 +122,7 @@
         }
     </script>
 
-<div id="legends" class="raw" style="width: 100%; margin: 10px 0px 0px 20px;">
+<div class="container" id="legends" class="raw" style="width: 100%; margin: 10px 0px 0px 20px;">
     <div class="block" style="margin-top: 0%; margin-right: 2%;">
         Legende par nombre de visite d'un pays :
     </div>
@@ -165,6 +152,6 @@
             5+
         </div>
 </div>
-
+</section>
 </body>
 </html> 
