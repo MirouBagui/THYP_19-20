@@ -31,5 +31,7 @@ IT pro news/Internet Actu Developpez.com ...
 
 # Diigo
 
-Signets et tags    
+my Tags Library 
+
+# Ted Talk's
 
