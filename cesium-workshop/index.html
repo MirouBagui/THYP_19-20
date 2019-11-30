@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Use correct character set. -->
+        <meta charset="utf-8">
+        <!-- Tell IE to use the latest, best version. -->
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <!-- Make the app on mobile take up the full browser screen and disable user scaling. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+        <title>My 3D road map road map</title>
+        <!-- The Cesium library. -->
+        <script src="https://cesium.com/downloads/cesiumjs/releases/1.63/Build/Cesium/Cesium.js"></script>
+        <link href="https://cesium.com/downloads/cesiumjs/releases/1.63/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+        <!-- Style our app. -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="index.css" media="screen">
+    </head>
+    <body>
+            <div class="container" class="raw" style="width: 100%; margin: 10px 0px 0px 20px;">
+                    <div class="block" style="margin-top: 0%; margin-right: 2%; color: bisque;">
+                        Les pays que je veux visité en jaune :
+                    </div>
+                </div>
+        <!-- A container for the Cesium Viewer to live in. -->
+        <div id="cesiumContainer"></div>
+
+        <!-- Some input elements for our app. -->
+  
+          
+        <div id="loadingIndicator" class="cover">
+            <div id="loadingIcon" class="loadingIndicator"></div>
+        </div>
+        <style>
+            @import url(/index.css);
+            html, body, #cesiumContainer {
+          width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden;
+      }
+        </style>
+        <div id="cesiumContainer" class="fullSize"></div>
+        <div id="loadingOverlay">
+            <h1>Loading...</h1>
+        </div>
+         <!-- Our app code. -->
+        <script src="Source/App.js"></script>
+        <div class="container">
+            
+        </div>
+    </body>
+</html>
