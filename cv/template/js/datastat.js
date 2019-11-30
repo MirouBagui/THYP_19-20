@@ -1,5 +1,4 @@
 //Merci a vvns
-
 function formatItem(t, e) {
     var s = ""
       , i = 0
@@ -55,7 +54,7 @@ function formatStats() {
     i = 0; i < d.statistiques.besoins.length; i++)
         percentage = d.statistiques.besoins[i].total / max * 100,
         block += '<h5 style="text-align: center; color: #c7a163;">' + d.statistiques.besoins[i].item +'</h5> <span style="color: #d82c2e;float: right;"> ' +d.statistiques.besoins[i].total+ '</span><br><div class="progress"><div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width:' + percentage + '%"></div></div><br><p><b>Besoins : </b>' + d.statistiques.besoins[i].best.toString() + '</p><br><p><b>Compétents : </b>' + d.statistiques.competences[i].best.toString() + '</p><hr>';
-    $("#statsToAdd").html(block)
+    $("#statadd").html(block)
 }
 var d;
 $(document).ready(function() {
